@@ -6,25 +6,11 @@ package com.example.lenovo.cs3130_assignment2;
 
 
 public class Password {
-    private String password;
-
-    public Password(String password) {
-        this.password = password;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public int checkPassword(){
-        if(this.password.equals("password")){
+    public int checkPassword(String passwordText){
+        if(passwordText.equals("password")){
             return 1;
         }
-        else if(this.password.length()<=8){
+        else if(passwordText.length()<=8){
             return 2;
         }
         else{
