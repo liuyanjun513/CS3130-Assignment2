@@ -45,13 +45,13 @@ public class Password {
             return "Password must be longer than 8 characters.";
         }
         else if(number==3){
-            return "Password can not be shorter than 25 characters.";
+            return "Password can not be longer than 25 characters.";
         }
         else if(number==4){
             return "Password must include one digit at least.";
         }
         else if(number==5){
-            return "Password can be all digits.";
+            return "Password can not be all digits.";
         }
         else{
             return "password is correct";
